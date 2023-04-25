@@ -18,46 +18,38 @@ a, a:link, a:visited{
 ul{
   list-style: none;
 }
+  
 .container{
-  width: 100%;
+  width: 1920px;
   margin: 0 auto;
 }
-.do .container h1{
-  float: left;
-  margin-top: 25px;
-  margin-left: 550px;
-  font-size: 32px;
-  border-top:2px solid #222;
-  
-}
-/* 로그인 회원가입 */
 .logres-box{
-  max-width: 100px;
+  max-width: 1820px;
   margin: 0 auto;
 }
 .login-bar{
-  padding-top: 10px;
-  padding-right: 10px;
+  padding: 10px 0 0 0;
   text-align: right;
-  font-size:14px; 
+  font-size:17px; 
 }
 /*                     헤더                             */
 header{
-  width: 1600px;
-  height: 80px;
+  width: 1820px;
+  height: 100px;
   margin: 0 auto;
+  margin-top:10px;
   z-index: 1;
 }   
 .logo{ /*         헤더 - 로고            */
   width: 150px;
-  height: 70px;
-  padding-left: 10px; 
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 3%;
   float: left;
 }
 .logo img{
-  width: 70px;
+  width: 50%;
   float: left;
-  cursor: pointer;
 }
 .logo h1{ /*.logo > a > h1 이렇게도 가능*/
     float: right;
@@ -71,18 +63,18 @@ header{
 .rightHeader{
   float: right;
   height: 64px;
-  padding: 7px;    
-  padding-top: 20px;
+  padding: 7px;
+  margin-top: 10px;
 }
 .input-search{
   float: left;
   background-color: #fff;
   border: 1px solid #cccccc;
   border-radius: 20px 0 0 20px;/* 왼위, 오른 위, 오른 아래, 왼 아래*/
-  width: 170px;
-  height: 40px;
+  width: 200px;
+  height: 50px;
   padding: 0 0 1px 20px;
-  font-size: 14px;
+  font-size: 17px;
   font-family: 'Noto Sans KR', sans-serif;
   color: #555555;
 }
@@ -97,8 +89,8 @@ header{
   background-size:55%;
   background-position: center;
   background-color: #fff;
-  width: 50px;
-  height: 40px;
+  width: 70px;
+  height: 50px;
   cursor: pointer;
   border-radius: 0 20px 20px 0; /* 윈왼, 오른오, 오른아래, 오른 왼*/
   border:1px solid #ccc;
@@ -114,28 +106,29 @@ header{
 
 
 nav{
-  width:1200px;
-  height: 90px;
-  padding-left: 100px;
-  padding-top: 15px;
+  width:1920px;
+  height: 150px;
+  padding: 15px 0 0 0;
   margin: 0 auto;
-  float: left;
+  font-size: 21px;
   font-weight: 550;
   font-family: 'Noto Sans KR', sans-serif;
 }
 /* 삼단버튼 */
 /* 메뉴바 펼치기! 찾아 배운거! */
 nav .nav-fir{
-  padding-left: 100px;
+  margin-left: 200px;
   float: left;
 }
 #menuicon {
   display:none;
 }
+label{
+  margin-top: 35px;
+}
 #menuicon + label {
   position:relative;
   display:block;
-  margin-top: 30px;
   margin-left: 10px;
   width:25px;
   height:25px;
@@ -177,7 +170,7 @@ nav .nav-fir{
 }
 
 .sidebar {
-  margin-top: 20px;
+  margin-top: 38px;
   width:100%;
   height:0px;
   background-color: rgba(20, 74, 31, 0.61);
@@ -187,6 +180,7 @@ nav .nav-fir{
   transition:all 0.4s;
   overflow:hidden;
   box-shadow: 0px 2px 5px gray;
+  
 }
 .sidebar::before{
   background-image: url(../images/side-con.jpg) ;
@@ -202,29 +196,30 @@ nav .nav-fir{
   bottom: 0px;
 }
 #menuicon:checked + label + .sidebar {
-  height: 300px;
+  height: 400px;
 }
 
-
 .sidebar-ul {
+  display: flex;
+  justify-content: center;  
   width:100%;
   text-align:center;
   margin: 0 auto;
 }
 
 .sidebar-ul > li {
-  width: 14%;
+  width: 15%;
   margin-top:16px;
   border-right:1px solid #ccc;
   float: left;
 }
 .sidebar-ul > li:first-child {
-  margin-left:23%;
+  margin-left:5%;
 }
 .sidebar-ul > li > a {
   color: white;
   border-bottom:1px solid #ccc;
-  font-size:20px;
+  font-size:25px;
   font-weight: 500;
 }
 .sidebar-li > li{
@@ -235,7 +230,7 @@ nav .nav-fir{
 }
 .sidebar-li > li > a{
   color: white;
-  font-size:16px;
+  font-size:20px;
   font-weight: 400;
 }
 .sidebar-li .desc{
@@ -243,18 +238,20 @@ nav .nav-fir{
 }
 .sidebar-li .desc > a{
   color: white;
-  font-size:14px;
+  font-size:18px;
   font-weight: normal;
 }
 
 /* nav left */
 .nav-left{
+  padding-left: 100px;
   padding-top: 30px;
+  height: 64px;
   text-align: center;
 }
 
 .nav-menu > li{
-  width: 200px;
+  width: 250px;
   float: left;
   position: relative;
   
@@ -265,7 +262,7 @@ nav .nav-fir{
 .nav-menu > li > a {
   display: block;
   color: black;
-  padding-bottom: 20px;
+  padding-bottom: 10%;
 }
 .nav-menu > li > a:hover{
   text-shadow: 0 -1px #ccc;
@@ -277,18 +274,18 @@ nav .nav-fir{
   width: 100%;
   background: linear-gradient(180deg, rgba(112, 216, 133, 0.779) 0%, rgb(255, 255, 255) 5%);
   left: 0;
-  margin-top: 2px;
+  margin-top: 12px;
   height: 0;
   transition: all 0.4s;
 }
 
 .nav-menu > li > ul > li {
   /*위 아래 오른쪽 왼쪽*/
-  padding: 15px 15px 3px 3px;
+  padding: 35px 15px 10px 3px;
   text-align: center;
 }
 .nav-menu > li > ul > li > a{
-  font-size: 15px;
+  font-size: 20px;
   visibility: hidden;
   transition: all 0.4s;
   opacity: 0;
@@ -303,7 +300,7 @@ nav .nav-fir{
 .nav-menu > li:hover > ul{
   visibility: visible;
   opacity:0.9;
-  height: 130px;
+  height: 200px;
   padding-left: 10px;
   box-shadow: 0px 2px 5px black;
   z-index: 10;
@@ -315,15 +312,19 @@ nav .nav-fir{
 }  
 /* 네비 END --------------------------------------------------------------*/
 .section{
-    min-width: 1400px;
+    width: 1920px;
     border-top: 4px solid rgb(130, 223, 76);
     clear: both;
 }
 .section .slidewrap{
-  max-width: 1400px;
+  width: 90%;
   height: 400px;
     overflow: hidden;
     margin: 0 auto;
+}
+.section .slidewrap img{
+  width: 100%;
+  height: 400px;
 }
 
 
@@ -331,22 +332,21 @@ nav .nav-fir{
 /*                     헤더                             */
 /* contents -------------------------------------------------------------------------------------------*/
 .contents{ /*          컨텐츠            */
-  min-width: 1250px;
-  max-width: 1250px;
-  height: 310px;
+  width: 1920px;
+  height: 400px;
   margin: 0 auto;
   
 }
 .tabMenu{ /*          컨텐츠 - 탭메뉴            */
   /*부모가 컨텐츠*/
-  margin-left: 0px;
   text-align: center;
-  width: 50%;
-  height: 310px;
-  margin-top: 20px;
+  width: 700px;
+  height: 400px;
+  margin-left: 250px;
   float: left;
 }
 .tabMenu label{
+  font-size: 20px;
   margin-bottom: 15px;
   display: inline-block;
   font-weight: 600;
@@ -359,14 +359,16 @@ nav .nav-fir{
 }
 #notice ul li{
   padding-top: 10px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2.5;
   border-bottom: 1px solid #ddd;
 }
-
+.tabContent ul :hover{
+  background-color: rgb(215, 215, 215);
+}
 .tabMenu span{
   font-weight: 100;
-  font-size: 13px;
+  font-size: 16px;
   padding-right: 15px;
 }
 /*---------------------이달의 식물-------------------------*/
@@ -378,12 +380,12 @@ nav .nav-fir{
   margin: 0 auto;
 }
 .btn-about {
-  margin: 55px 0 0 50px;
+  margin: 100px 0 0 50px;
 }
 .btn-about button {
   width: 200px;
   height: 200px;
-  margin-left: 50px;
+  margin-left: 100px;
   border-radius: 100%;
   background-color: #43a048cb;
   border: none;
@@ -416,7 +418,7 @@ nav .nav-fir{
     .modal {
       position: absolute;
       top: 19%;
-      width: 440px;
+      width: 550px;
       background-color: #bbdcbd;
       border-radius: 10px;
       text-align: center;
@@ -429,7 +431,7 @@ nav .nav-fir{
       font-family: "GmarketBold";
     }
     .modal h4 {
-      font-size: 20px;
+      font-size: 24px;
     }
     .modal img {
       width: 350px;
@@ -438,14 +440,16 @@ nav .nav-fir{
     }
     .modal p {
       margin: 0 auto;
-      width: 360px;
+      width: 500px;
       font-weight: 1000;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 24px;
     }
     .btn-close {
       padding: 8px 140px;
       margin: 25px 0 35px 0;
+      height: 50px;
+      font-size: 20px;
       background-color: #678168;
       border-radius: 10px;
       border: none;
@@ -477,7 +481,7 @@ nav .nav-fir{
 
 /*     푸터 시작     */
 footer{   
-    width:1400px;
+    width:1920px;
     text-align: center; 
     height:65px;
     margin: 0 auto;
@@ -514,59 +518,205 @@ footer{
   font-size:14px;  /* 글자 크기 */
   color:#aaa; 
 }
-
-@media screen and (max-width:1250px){
-  .container{
-      min-width: 1000px;
-      margin: 0 auto;
+@media screen and (max-width:1536px){
+  .logres-box{
+    width: 1336px;
   }
-  header{
-    max-width: 1200px;
-    min-width: 1000px; 
-  }    
   .login-bar{
-      max-width: 1200px;
+    font-size: 14px;
   }
-  .logo{
-    padding-top: 15px;
-    max-width: 120px;
+  .input-search{
+    width: 170px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .input-search-submit{
+    width: 50px;
+    height: 40px;
+  }
+  .container{
+    max-width: 1536px;
+    min-width: 1281px;
+    margin: 0 auto;
+}
+  header{
+    max-width: 1536px;
+    min-width: 1281px;
+  }
+  .logo{ /*         헤더 - 로고            */
+    width: 120px;
+    height: 70px;
+    margin: 0 auto;
+    margin-left: 3%;
   }
   .logo img{
-    max-width: 60px;
+    width: 50%;
+    float: left;
   }
-  .logo h1{
-    max-width: 70px;
-    padding-left: 0px;
-    font-size: 20px;
+  .logo h1{ /*.logo > a > h1 이렇게도 가능*/
+      float: right;
+      padding-right: 10px;
+      padding-top: 15px;
+      font-weight: 500;
+      font-size: 24px;
+  }
+  .rightHeader{
+    margin-right: 5%;
+  }
+  .logres-box{
+    max-width: 1436px;
+  }
+  .sidebar {
+      margin-top: 30px;
+  }
+  .sidebar-ul {
+    width: 100%;
+    padding-right: 20%;
+  }
+  .sidebar-ul > li {
+    width: 21%;
+  }
+  .sidebar-ul > li > a {
+    font-size:18px;
+  }
+  .sidebar-li > li > a{
+    color: white;
+    font-size:16px;
+    font-weight: 400;
+  }
+  .sidebar-li .desc > a{
+    color: white;
+    font-size:14px;
+    font-weight: normal;
+  }
+  nav{
+    max-width: 1200px;
+    height: 100px;
+    font-size: 18px;
+    }
+ nav .nav-fir{
+  height: 64px;
+  margin-left: 150px;
+  }
+  .nav-menu > li{
+    width: 230px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+  .nav-menu > li > a {
+    padding-bottom: 20px;
+  }
+  .nav-menu > li > ul {
+    margin-top: 12px;
+  }
+  .nav-menu > li > ul > li {
+    padding: 15px 15px 3px 3px;
     text-align: center;
   }
+  .nav-menu > li > ul > li > a{
+    font-size: 18px;
+  }
+  .nav-menu > li:hover > ul{
+    height: 130px;
+  }  
   .section{
-    min-width: 1000px;
+    max-width: 1536px;
+    min-width: 1281px;
 }
+.section .slidewrap{
+  max-width: 1336px;
+}
+.contents{ /*          컨텐츠            */
+  min-width: 1536px;
+  max-width: 1281px;
+  height: 100%;
+  margin: 0 auto;
+}
+.tabMenu{ /*          컨텐츠 - 탭메뉴            */
+  /*부모가 컨텐츠*/
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
+  height: 310px;
+}
+.tabMenu label{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.modal p {
+  font-size: 14px;
+  width: 360px;
+}
+.btn-close {
+  padding: 8px 140px;
+  margin: 25px 0 35px 0;
+  height: 40px;
+  font-size: 16px;
+}
+@media screen and (max-width:1280px){
+  .container{
+      max-width: 1200px;
+      min-width: 1024px;
+      margin: 0 auto;
+  }
+  /* 헤더 - 로그인박스 및 로고, 서치 바 */
+  header{
+    max-width: 1200px;
+    min-width: 1024px; 
+  }    
+  .rightHeader{
+    margin-right: 3%;
+  }
+  .logres-box{
+    max-width: 1100px;
+  }
+  .login-bar{
+    font-size: 13px;
+  }
+  .logo{
+    max-width: 100px;
+  }
+  .logo img{
+    /* xxx */
+  }
+  .logo h1{
+    /* padding-right: 25%; */
+    margin: 0 auto;
+    font-size: 18px;
+  }
+    .sidebar-ul {
+      padding-right: 30%;
+    }
+  /* 슬라이드 - 이미지 */
+  .section{
+      max-width: 100%;
+      min-width: 1024px;
+  }
   .section img{
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
   }
- 
-  .section .slidewrap {
-      max-width:1200px;
-      height: 100%;
-  }
-  .section .slidelist .textbox h5 {
-      font-size:28px;
-  }
-  .section .slidelist .textbox p {
-      font-size:19px;
-  }
-
+  /* 네비게이션 - 삼단바 및 메뉴 */
   nav{
-      max-width: 840px;
-  }
-  nav > li{
-    font-size: 6px;
+    width: 1200px;
+    padding: 0;
+    padding-top: 15px;
+    margin: 0 auto;
   }
   nav .nav-fir{
-    padding-left: 20px;
+    height: 64px;
+    margin-left: 100px;
+    }
+    .nav-menu > li{
+      width: 200px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    nav > li{
+      font-size: 5px;
+    }
+  .sidebar {
+    margin-top: 30px;
+    padding-left: 5%;
   }
   .sidebar-ul > li {
       width: 13%;
@@ -575,16 +725,17 @@ footer{
       margin-left:23%;
   }
   .nav-menu > li,.sidebar-ul > li{
-      width: 155px;
+      width: 135px;
   }
   .nav-menu > li:first-child{
       margin-left: 10px;
   }
   .nav-menu > li > ul > li > a{
-    font-size: 13px;
+    font-size: 11.5px;
   }
+  
   .contents {
-      min-width: 1000px;
+      min-width: 1024px;
       max-width: 1200px;
   }
   .contents .tabMenu{
@@ -629,20 +780,21 @@ footer{
   max-width: 1200px;
  }
 }
-/*----------------1000-----------------*/
-@media screen and (max-width:1000px){
-  .container{
-      max-width: 1000px;
-      min-width: 850px;
+/*----------------1024 타블렛-----------------*/
+@media screen and (max-width:1023px){
+  /* .container{
+      max-width: 1023px;
+      min-width: 768px;
       margin: 0 auto;
   }
   header{
-      max-width: 1000px;
-      min-width: 850px;
+      max-width: 1023px;
+      min-width: 768px;
   }   
+  .logres-box{
+    max-width: 1023px;
+}
   .login-bar{
-    max-width: 980px;
-    min-width: 851px;
     height: 20px;
     font-size: 12px;
 }
@@ -662,8 +814,7 @@ footer{
   }
 
   nav {
-      max-width: 650px;
-      min-width: 560px;
+      width: 690px;
   }
   .nav-left{
     padding: 0;
@@ -706,26 +857,26 @@ footer{
   }
   
   .section {
-      min-width: 851px;
+      min-width: 768px;
   }
   .section .slidewrap {
-      max-width:999px;
+      max-width:1023px;
   }
   .contents{
-      min-width: 851px;
-      max-width: 999px;
+      min-width: 768px;
+      max-width: 1023px;
   }
   .contents .btn-open{
     max-width: 150px;
     margin-right: 10px;
 }
 .btn-about {
-  margin: 50px 0 0 30px;
+  margin: 70px 0 0 30px;
 }
 .btn-about button {
-  width: 155px;
-  height: 155px;
-  margin-left: 30px;
+  width: 145px;
+  height: 145px;
+  margin-left: 15px;
   border-radius: 100%;
   background-color: #43a048cb;
   border: none;
@@ -754,8 +905,8 @@ footer{
   font-size: 13px;
 }
   footer{   
-      max-width:900px; 
-      min-width: 850px;
+      max-width:1023px; 
+      min-width: 768px;
   }
   #footer-div ul li a {  
     font-size:12px; 
@@ -768,28 +919,137 @@ footer{
   }
   #company p{
     font-size: 12px;
-  }
+  } */
+}  .container{
+  min-width: 1000px;
+  margin: 0 auto;
 }
-/*----------------850-----------------*/
-@media screen and (max-width:850px){
+header{
+max-width: 100%;
+min-width: 768px; 
+}    
+.logo{
+padding-top: 15px;
+}
+/* .logo img{
+max-width: 60px;
+}
+.logo h1{
+max-width: 70px;
+padding-left: 0px;
+font-size: 20px;
+text-align: center;
+} */
+
+.section img{
+max-width: 100%;
+height: 100%;
+}
+.section{
+min-width: 768px;
+}
+.section .slidewrap {
+  max-width:95%;
+  height: 100%;
+}
+.section .slidelist .textbox h5 {
+  font-size:28px;
+}
+.section .slidelist .textbox p {
+  font-size:19px;
+}
+
+nav{
+  padding-left: 60px;
+}
+nav > li{
+font-size: 5px;
+}
+nav .nav-fir{
+padding-left: 0px;
+}
+.sidebar-ul > li {
+  width: 13%;
+}
+.sidebar-ul > li:first-child {
+  margin-left:23%;
+}
+.nav-menu > li,.sidebar-ul > li{
+  width: 135px;
+}
+.nav-menu > li:first-child{
+  margin-left: 10px;
+}
+.nav-menu > li > ul > li > a{
+font-size: 11.5px;
+}
+.contents {
+  min-width: 768px;
+  max-width: 1023px;
+}
+.contents .tabMenu{
+margin-top: 15px;
+max-width: 100%;
+}
+#notice > ul > a > li{
+font-size: 14px;
+}
+.btn-about {
+margin: 70px 0 0 20px;
+}
+.btn-about button {
+width: 155px;
+height: 155px;
+margin-left: 50px;
+border-radius: 100%;
+background-color: #43a048cb;
+border: none;
+color: #f1f1f1;
+font-size: 16px;
+}
+.modal{
+top: 18%;
+max-width: 450px;
+height: 580px;
+}
+.modal img{
+max-width: 80%;
+margin: 15px 0 15px 0;
+}
+.modal h3 {
+margin: 20px 0 7px 0;
+font-size: 18px;
+color: #678168;
+font-family: "GmarketBold";
+}
+.modal h4 {
+font-size: 15px;
+}
+footer{
+max-width: 1023px;
+}
+/*----------------768 모바일-----------------*/
+@media screen and (max-width:768px){
   .container{
-      max-width: 849px;
-      min-width: 620px;
+      max-width: 768px;
+      min-width: 320px;
+  }
+  .logres-box{
+    max-width: 650px;
   }
   .login-bar{
-    width: 620px;
     font-size:10px; 
   }
   .logo{
     margin: 20px 0 0 0px;
     padding: 0px;
-    width: 90px;
+    width: 70px;
   }
   .logo img{
-    width: 50px;
+    width: 40px;
   }
   .logo h1{
-    max-width: 30px;
+    max-width: 20px;
     padding: 0;
     margin-right: 10px;
     padding-top: 15px;
@@ -797,8 +1057,8 @@ footer{
     text-align: center;
   }
   header{
-    max-width: 850px;
-    min-width: 650px;
+    max-width: 767px;
+    min-width: 320px;
     height: 30px;
   }       
   .input-search{
@@ -811,17 +1071,23 @@ footer{
     width: 50px;
     height: 30px;
   }
-
-  nav {
-      width: 560px;
-      padding: 0px;
-      padding-left: 25px;
-  }
-  nav .nav-fir{
-    width: 50px;
+  nav{
+    width: 700px;
     padding: 0;
     padding-top: 20px;
+    padding: 0;
+    padding-top: 15px;
+    margin: 0 auto;
   }
+  nav .nav-fir{
+    height: 64px;
+    margin-left: 0px;
+    }
+    .nav-menu > li{
+      width: 30px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
   .sidebar-ul > li {
       width: 16%;
   }
@@ -874,14 +1140,14 @@ footer{
   }  
 
   .section {
-      min-width: 650px;
+      min-width: px;
   }
   .section .slidewrap {
-      max-width:750px;
+      max-width:767px;
   }
   .contents{
-      min-width: 650px;
-      max-width: 849px;
+      min-width: 320px;
+      max-width: 767px;
   }
   .btn-about {
     padding: 0px;
@@ -942,10 +1208,12 @@ footer{
     font-size: 15px;
   }
   footer{   
-    max-width: 650px;
-     min-width: 600px;
+    max-width: 767px;
+     min-width: 320px;
   }
   #footer-div ul {
       margin: 15px 0 0 0;
   }
+
+}
 }
